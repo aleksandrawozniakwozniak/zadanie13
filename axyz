@@ -1,0 +1,27 @@
+{
+    private static void Main(string[] args)
+    {
+        for (int i = 0; i <= 90; i += 10)
+        {
+            double radiany = i.StopnienaRadiany();
+            double sinus = Math.Sin(radiany);
+            double cosinus = Math.Cos(radiany);
+            Console.WriteLine("Kąt :{0}  sinus {1}  cosinus {2} " ,i, sinus,cosinus);
+        
+
+        }
+
+
+
+    }
+
+}
+
+static class xd {
+    public static double StopnienaRadiany(this int stopnie)
+    {
+        double radiany = (Math.PI / 180) * stopnie;
+        return radiany;
+    }
+
+}
